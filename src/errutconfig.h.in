@@ -27,28 +27,10 @@
 
 */
 
-#include "errorbase.h"
-#include "booltype.h"
+#ifndef ERRUT_ERRUTCONFIG_H
 
-using namespace errut;
+#define ERRUT_ERRUTCONFIG_H
 
-class DummyErrutObject : public ErrorBase
-{
-public:
-	DummyErrutObject() { }
-	~DummyErrutObject() { }
+${ERRUT_DLLSTUFF}
 
-	bool function();
-	bool_t otherFunction();
-};
-
-bool DummyErrutObject::function()
-{
-	setErrorString("Bla!");
-	return false;
-}
-
-bool_t DummyErrutObject::otherFunction()
-{
-	return "Just some error message";
-}
+#endif // ERRUT_ERRUTCONFIG_H
