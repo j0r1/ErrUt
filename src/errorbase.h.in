@@ -3,7 +3,7 @@
   This file is a part of ErrUt, a small collection of error handling
   utilities.
   
-  Copyright (c) 2008 Jori Liesenborgs
+  Copyright (c) 2008-2012 Jori Liesenborgs
 
   Contact: jori.liesenborgs@gmail.com
 
@@ -40,11 +40,13 @@
 namespace errut
 {
 	
+${ERRUT_DLLSTUFF}
+
 /** Base class which allows an error message to be set. 
  *  Base class which allows an error message to be set. Optionally, an
  *  object name can be stored at creation time.
  */
-class ErrorBase
+class ERRUT_IMPORTEXPORT ErrorBase
 {
 public:
 	/** Creates an instance without an explicit object name. */

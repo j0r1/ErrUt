@@ -1,4 +1,4 @@
-/**\mainpage ErrUt
+/**\mainpage ERRUT
  *
  * \author Jori Liesenborgs
  *
@@ -8,10 +8,10 @@
  * it is only one header file. It was originally a part of a larger project,
  * but turned out to be helpful in several other projects, which is why its
  * own project was created.
- *
+ * 
  * \section copyright Copyright license
  * 	
- * 	The library code uses the following MIT-style copyright license:
+ * 	The following copyright license applies:
  *
  * 	\code
  * Permission is hereby granted, free of charge, to any person

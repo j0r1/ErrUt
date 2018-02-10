@@ -1,7 +1,7 @@
 
 
                                 ERRUT README 
-				  (1.0.0)
+				  (1.0.1)
 
 
 1. INTRODUCTION
@@ -35,11 +35,7 @@ The license which applies to the package is the following MIT-style license:
 
 3. INSTALLATION
 
-On Unix-like platforms, use the standard 'configure' and 'make' procedure
-to install the package.
-
-On a Win32 platform, just add the 'include' subdirectory to projects which
-need to use this package.
+The library can be compiled using the CMake build system. 
 
 4. CONTACT
 

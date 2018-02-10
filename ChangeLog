@@ -3,6 +3,10 @@
                                ErrUt ChangeLog
 
 
+Version 1.0.1, August 2011
+ * Switched to the CMake build system.
+ * Made it possible to compile as a DLL in MS-Windows
+
 Version 1.0.0, February 2008
  * Initial release
 
