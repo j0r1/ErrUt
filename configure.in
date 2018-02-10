@@ -1,0 +1,17 @@
+AC_INIT(configure.in)
+AM_INIT_AUTOMAKE(errut, 1.0.0)
+
+if test "BLA$CXXFLAGS" = "BLA" ; then
+	dnl CXXFLAGS="-g -Werror -Wall"
+	CXXFLAGS="-O2 "
+fi
+
+AC_LANG(C++)
+AC_PROG_CXX
+
+AC_OUTPUT(Makefile \
+	  include/Makefile \
+	  include/errut/Makefile \
+          doc/Makefile \
+	  )
+
