@@ -3,6 +3,9 @@
                                ErrUt ChangeLog
 
 
+Version 1.1.0, February 2018
+ * Added bool_t
+
 Version 1.0.1, July 2012
  * Switched to the CMake build system.
  * Made it possible to compile as a DLL in MS-Windows

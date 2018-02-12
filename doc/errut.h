@@ -1,11 +1,11 @@
-/**\mainpage ERRUT
+/**\mainpage ErrUt
  *
  * \author Jori Liesenborgs
  *
  * \section intro Introduction
  *
- * This is meant to be a set of simple error handling utilities. Currently
- * it is only one header file. It was originally a part of a larger project,
+ * This is meant to be a set of simple error handling utilities. 
+ * It was originally a part of a larger project,
  * but turned out to be helpful in several other projects, which is why its
  * own project was created.
  * 
