@@ -340,19 +340,31 @@ import shutil
 curpath = os.getcwd()
 
 try:
+    print("Environment variables:")
+    for x in sorted(os.environ):
+        print("   ", x)
+
     if os.getenv("READTHEDOCS") == 'True':
-        dstdir = "_build/html"
+        dstdir = os.path.join(os.environ["READTHEDOCS_OUTPUT"], "html")
     else:
         dstdir = "../build/html"
 
     dstdir = os.path.abspath(dstdir)
+    print("Target documentation dir:", dstdir)
+    print("Current dir:", curpath)
 
     os.chdir("../../")
     subprocess.call("cp Doxyfile Doxyfile-changed", shell=True)
     checkMarkdownSetting()
     changeVersionString()
     subprocess.call("doxygen Doxyfile-changed", shell=True)
+    if not os.path.exists(dstdir):
+        print("Destination directory did not exist, creating it")
+        os.makedirs(dstdir, exist_ok=True)
+
     subprocess.call("mv -f documentation/* {}".format(dstdir), shell=True)
+    print("Contents of", dstdir)
+    subprocess.call("ls {}".format(dstdir), shell=True)
 finally:
     os.chdir(curpath)
 
